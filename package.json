@@ -1,0 +1,21 @@
+{
+  "name": "sct-tests",
+  "version": "1.0.0",
+  "description": "End to end tests for SCT",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio",
+    "selser": "selenium-standalone"
+  },
+  "author": "Luke Fitzgerald",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "node-notifier": "^5.0.2",
+    "randomstring": "^1.1.5",
+    "selenium-standalone": "^6.0.1",
+    "wdio-mocha-framework": "^0.5.9",
+    "webdrivercss": "^1.1.10",
+    "webdriverio": "^4.6.2"
+  }
+}

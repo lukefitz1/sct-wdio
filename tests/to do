@@ -1,0 +1,11 @@
+to do
+
+Make'submit' guest checkout form function, register at checkout form function, login on checkout form function
+Figure out how to handle the colons in IDs on checkout form fields without using xpath
+Add 'it' steps to each checkout file
+Visual testing
+check for page load
+check for URL
+set up browser settings, particularly width
+set up CC info
+handle login / log out between tests
