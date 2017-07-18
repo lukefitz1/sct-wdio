@@ -51,7 +51,7 @@ describe("Guest checkout - should complete guest checkout on B2C site", function
         } else if (env === 'prod') {
             checkout.ccLabel.click();
             //checkout.fillCCForm('Visa', '4111111111111111', '04 - April', '2023', '123');
-            checkout.fillCCForm('MasterCard', '5474151752505476', '08 - August', '2019', '158');
+            checkout.fillCCForm('', '', '08 - August', '2019', '158');
         }
         
         checkout.submitPaymentMethodForm();
