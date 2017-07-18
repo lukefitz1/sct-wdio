@@ -42,15 +42,15 @@ class MyAccount {
 	get wsCreateConfirmPw() { return $('#confirmation'); }
 
 	login(un, pw) {
-		this.un.setValue('luke.fitzgerald@blueacorn.com');
-		this.pw.setValue('pass4luke');
+		this.un.setValue(un);
+		this.pw.setValue(pw);
 
 		this.loginForm.submitForm();
 	}
 
 	wholesaleLogin(un, pw) {
-		this.wsUn.setValue('luke.fitzgerald-dealer@blueacorn.com');
-		this.wsPw.setValue('pass4luke');
+		this.wsUn.setValue(un);
+		this.wsPw.setValue(pw);
 
 		this.wsLoginForm.submitForm();
 	}

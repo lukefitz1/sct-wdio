@@ -78,19 +78,19 @@ class Checkout {
 		this.paymentMethodForm.submitForm();
 	}
 
-	fillCCForm(type, num, expmon, expyr,ccv) {
-		this.ccType.selectByVisibleText('Visa');
-		this.ccNum.setValue('4111111111111111');
-		this.ccExpMon.selectByVisibleText('04 - April');
-		this.ccExpYr.selectByVisibleText('2023');	
-		this.ccVerifyNum.setValue('123');	
+	fillCCForm(type, num, expmon, expyr, ccv) {
+		this.ccType.selectByVisibleText(type);
+		this.ccNum.setValue(num);
+		this.ccExpMon.selectByVisibleText(expmon);
+		this.ccExpYr.selectByVisibleText(expyr);	
+		this.ccVerifyNum.setValue(ccv);	
 	}
 
-	loginAtCheckout() {
-		this.email.setValue('luke.fitzgerald@blueacorn.com');
-		this.pw.setValue('pass4luke');
+	loginAtCheckout(un, pw) {
+		this.email.setValue(un);
+		this.pw.setValue(pw);
 
-		this.loginForm.submitForm();
+		this.checkoutTypeForm.submitForm();
 	}
 
 }
